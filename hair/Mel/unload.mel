@@ -1,0 +1,4 @@
+	string $pluginFile = "sofaHair.mll";
+	if(!`pluginInfo -q -unloadOk $pluginFile`)
+		file -f -new;
+	unloadPlugin $pluginFile;

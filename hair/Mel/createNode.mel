@@ -1,0 +1,46 @@
+nurbsPlane -p 0 0 0 -ax 0 1 0 -w 1 -lr 1 -d 10 -u 1 -v 1 -ch 1; objectMoveCommand;
+select -r nurbsPlane1 ;
+scale -r 11.94894 11.94894 11.94894 ;
+scale -r 1 1 0.343159 ;
+select -addFirst makeNurbPlane1 ;
+setAttr "makeNurbPlane1.patchesU" 5;
+setAttr "makeNurbPlane1.patchesV" 5;
+
+
+createNode drawHairNode;
+connectAttr -f nurbsPlaneShape1.worldSpace[0] drawHairNode1.input;
+select -r nurbsPlane1 ;
+makeIdentity -apply true -t 1 -r 1 -s 1 -n 0;
+
+
+
+nurbsPlane -p 0 0 2 -ax 0 1 0 -w 1 -lr 1 -d 10 -u 1 -v 1 -ch 1; objectMoveCommand;
+select -r nurbsPlane2 ;
+scale -r 11.94894 11.94894 11.94894 ;
+scale -r 1 1 0.343159 ;
+select -addFirst makeNurbPlane2 ;
+setAttr "makeNurbPlane2.patchesU" 5;
+setAttr "makeNurbPlane2.patchesV" 5;
+
+
+createNode drawHairNode;
+connectAttr -f nurbsPlaneShape2.worldSpace[0] drawHairNode2.input;
+select -r nurbsPlane2 ;
+makeIdentity -apply true -t 1 -r 1 -s 1 -n 0;
+
+
+
+
+nurbsPlane -p 0 0 4 -ax 0 1 0 -w 1 -lr 1 -d 10 -u 1 -v 1 -ch 1; objectMoveCommand;
+select -r nurbsPlane3 ;
+scale -r 11.94894 11.94894 11.94894 ;
+scale -r 1 1 0.343159 ;
+select -addFirst makeNurbPlane3 ;
+setAttr "makeNurbPlane3.patchesU" 5;
+setAttr "makeNurbPlane3.patchesV" 5;
+
+
+createNode drawHairNode;
+connectAttr -f nurbsPlaneShape3.worldSpace[0] drawHairNode3.input;
+select -r nurbsPlane3 ;
+makeIdentity -apply true -t 1 -r 1 -s 1 -n 0;

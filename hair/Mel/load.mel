@@ -1,0 +1,2 @@
+	string $pluginFile ="C:\\Documents and Settings\\dennis.chao\\My Documents\\Visual Studio Projects\\hair\\sofaHair.mll";
+	loadPlugin $pluginFile;	

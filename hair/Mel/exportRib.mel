@@ -1,0 +1,2 @@
+//-p is the path where you export.
+ribGenCmd -p "c:/test.rib";
